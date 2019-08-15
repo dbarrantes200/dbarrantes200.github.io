@@ -1,6 +1,6 @@
 .navbar-default .navbar-brand {
-    color: #111010;
-    background-color: rgb(241, 245, 245);
+    color: #ffffff;
+    background-color: rgb(22, 177, 177);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
     font-weight: 300;
@@ -46,8 +46,8 @@ h3 {
 }
 
 .box {
-  color: #fff;
-  background: #a3e8ec;
+  color: #0b0c0c;
+  background: #fff;
 }
 
 .box-left {
