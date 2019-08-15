@@ -76,20 +76,22 @@
                         <h1>Summary</h1>
                         <hr>
                         <figure>
-                            <a target="_blank" href="Ploting_graph_of_Cities.png">
-                                <img id="viz-main" src="Ploting_graph_of_Cities.png" alt="Latitude of cities">
+                            <a target="_blank" href="Max Temperature vrs Latitude.png">
+                                <img id="viz-main" src="Max Temperature vrs Latitude.png" alt="City Latitude vs. Max Temperature">
                             </a>
                         </figure>
 
                         <section id="summary">
-                            <p>This project utilizes Python, API’s, and JSON traversals to try and answer a fundamental question:
-                                “What’s the weather like as we get closer to the equator?”
+                            <p>The purpose of this project was to analyze how weather changes as you get closer to the equator.
+                                To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble
+                                on over 500 cities.
                             </p>
 
-                            <p> Assigning 1,500 random Latitude and Longitudes, I utilized the Python CitiPy library to find
-                                the city closest to the Lat/Lon (dropping all duplicates) to get a listing of over 600 cities.
-                                I utilized OpenWeatherMapAPI to get the weather for the cities (dropping cities with no data)
-                                to create a dataframe of weather information for over 500 cities.
+                            <p> After assembling the dataset, we used MatplotLib to plot
+                                various aspects of the weather vs. latitude. Factors we looked
+                                at included: temperature, cloudiness, wind speed, and humidity. This site provides the source
+                                data and visualizations created as part of the analysis, as well as explanations and 
+                                descriptions of any and correlations witnessed.
                             </p>
 
                             <p>
