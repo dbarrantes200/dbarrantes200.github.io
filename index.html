@@ -6,12 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Summary: Latitude vs. X</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
-
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -19,10 +16,12 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script> 
+        crossorigin="anonymous"></script>
+
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
     <nav class="navbar navbar-default">
@@ -79,100 +78,73 @@
         </div>
     </nav>
 
-
-    <div class="container">
-        <div class="row row-grid">
-            <div class="col-md-8">
-                <div class="box box-left">
-                    <section id="intro">
-                        <h1>Summary: Latitude vs. X</h1>
-                        <hr>
-                        <figure>
-                            <a target="_blank" href="Fig1.png">
-                                <img id="viz-main" src="Fig1.png"
-                                    alt="City Latitude vs. Max Temperature">
-                            </a>
-                        </figure>
-
-                        <section id="summary">
-
-                            
-                            <p>The purpose of this project was to analyze how weather changes as you get closer to the
-                                equator.
-                                To accomplish this analysis, we first pulled data from the OpenWeatherMap API to
-                                assemble
-                                on over 500 cities.
-                            </p>
-
-                            <p> After assembling the dataset, we used MatplotLib to plot
-                                various aspects of the weather vs. latitude. Factors we looked
-                                at included: temperature, cloudiness, wind speed, and humidity. This site provides the
-                                source
-                                data and visualizations created as part of the analysis, as well as explanations and
-                                descriptions of any and correlations witnessed.
-                            </p>
+    <section id="summary">
+           <div class="col-lg-7">
+            <h1 class="mb-2">Summary: Latitude vs. X</h1>
+            <hr class="mr-2">
+            <img class="p-3" src="Fig2.png" alt="vs. household median income" height="320" width="390" align="left">
+            <p class="pt-1 mr-1">The purpose of this project was to analyze how weather changes as you get closer to the
+                equator.
+                To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble
+                on over 500 cities. </p>
+            <p class="pl-1 mr-1">After assembling the dataset, we used MatplotLib to plot
+                various aspects of the weather vs. latitude. Factors we looked
+                at included: temperature, cloudiness, wind speed, and humidity. This site provides the source
+                data and visualizations created as part of the analysis, as well as explanations and
+                descriptions of any and correlations witnessed. </p>
 
 
-                            <ul>
-                                <li>Temperature (F) vs. Latitude</li>
-                                <li>Humidity (%) vs. Latitude</li>
-                                <li>Cloudiness (%) vs. Latitude</li>
-                                <li>Wind Speed (mph) vs. Latitude</li>
+    </section>
 
-                            </ul>
+    </section>
+    </div>
+    </div>
 
-                        </section>
 
-                    </section>
+    <div class="col-md-4">
+        <div class="box box-right">
+            <h2>Visualizations</h2>
+            <hr>
+
+
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 col-md-6">
+                    <figure>
+                        <a href="temperature.html">
+                            <img id="landing-viz" src="Fig1.png" alt="Latitude vs. Temperature">
+                        </a>
+                    </figure>
                 </div>
-            </div>
 
-
-            <div class="col-md-4">
-                <div class="box box-right">
-                    <h2>Visualizations</h2>
-                    <hr>
-
-
-                    <div class="row">
-                        <div class="col-xs-6 col-sm-3 col-md-6">
-                            <figure>
-                                <a href="temperature.html">
-                                    <img id="landing-viz" src="Fig1.png"
-                                        alt="Temperature vrs Latitude">
-                                </a>
-                            </figure>
-                        </div>
-
-                        <div class="col-xs-6 col-sm-3 col-md-6">
-                            <figure>
-                                <a href="humidity.html">
-                                    <img id="landing-viz" src="Fig2.png" alt="Humidity vs Latitude">
-                                </a>
-                            </figure>
-                        </div>
-
-                        <div class="col-xs-6 col-sm-3 col-md-6">
-                            <figure>
-                                <a href="Cloudiness.html">
-                                    <img id="landing-viz" src="Fig3.png" alt="Cloudiness vs Latitude">
-                                </a>
-                            </figure>
-                        </div>
-
-                        <div class="col-xs-6 col-sm-3 col-md-6">
-                            <figure>
-                                <a href="wind.html">
-                                    <img id="landing-viz" src="Fig4.png" alt="Wind Speed vs Latitude">
-                                </a>
-                            </figure>
-                        </div>
-
-                    </div>
+                <div class="col-xs-6 col-sm-3 col-md-6">
+                    <figure>
+                        <a href="humidity.html">
+                            <img id="landing-viz" src="Fig2.png" alt="Latitude vs. Humidity">
+                        </a>
+                    </figure>
                 </div>
-            </div>
 
+                <div class="col-xs-6 col-sm-3 col-md-6">
+                    <figure>
+                        <a href="cloudiness.html">
+                            <img id="landing-viz" src="Fig3.png" alt="Latitude vs. Cloudiness">
+                        </a>
+                    </figure>
+                </div>
+
+                <div class="col-xs-6 col-sm-3 col-md-6">
+                    <figure>
+                        <a href="wind.html">
+                            <img id="landing-viz" src="Fig4.png" alt="Latitude vs. Wind Speed">
+                        </a>
+                    </figure>
+                </div>
+
+            </div>
         </div>
+    </div>
+
+    </div>
     </div>
 
 
