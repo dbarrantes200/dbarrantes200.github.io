@@ -6,6 +6,12 @@
     font-weight: 300;
 }
 
+.body {
+  color: #ffffff;
+  background-color: rgba(79, 22, 133, 0.692);
+  }
+
+
 .navbar-header{
     width:400px;
     margin-left:75px !important;
